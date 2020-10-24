@@ -8,4 +8,4 @@ services:
 before_script: pip install docker-compose
 
 script:
-  - make test && make flake
+  - make start && make test && make flake
