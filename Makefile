@@ -1,6 +1,9 @@
 start:
 	docker-compose up
 
+stop:
+	docker stop $$(docker ps -aqf "name=^drf-api")
+
 bash:
 	docker-compose exec app bash
 
